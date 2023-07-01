@@ -1,0 +1,47 @@
+.nav-container {
+  width: 97%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  .roverNavContainer {
+    .rover_nav_link {
+      padding: 5px 0;
+      text-align: right;
+
+      .rover_nav_text {
+        text-decoration: none;
+        color: #e6e6e6;
+        line-height: 25px;
+        font-size: 22px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: 1.5s;
+        font-variant: all-small-caps;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+
+        .dash {
+          width: 0;
+          height: 0;
+          border: 1px solid white;
+          margin-left: 10%;
+          transition: 0.5s;
+        }
+      }
+
+      .rover_nav_text:hover > .dash {
+        width: 50px;
+      }
+    }
+  }
+}
+.white {
+  color: #e6e6e6 !important;
+}
+svg {
+fill: #e6e6e6;
+}
+

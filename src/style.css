@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  font-variant: all-small-caps;
+  font-family: 'DM Sans', sans-serif;
+}
+img,
+video,
+embed {
+  max-width: 100%;
+}
+body {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  appearance: none;
+  -webkit-appearance: none;
+  user-select: none;
+  font-variant: all-small-caps;
+  font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
+  transition: 2s;
+}

@@ -1,0 +1,50 @@
+.unique_ride {
+  color: #e6e6e6;
+  font-size: 42px;
+  text-align: center;
+  width: 600px;
+  margin: 10% auto;
+  line-height: 50px;
+}
+.rover_unique_container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: auto;
+
+  .rover-unique-img-holder {
+    width: 500px;
+    height: 411px;
+    background-color: rgba(27,27,27,0.5);
+
+    img {
+      width: 100%;
+    }
+  }
+  .rover-unique-text {
+    color: #e6e6e6;
+    width: 450px;
+
+    align-self: flex-end;
+
+    p {
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      line-height: 2.8rem;
+    }
+    .unique-story {
+      margin-top: 20px;
+    }
+    .unique-story button {
+      background-color: #fff;
+      color: #000;
+      letter-spacing: .25em;
+      line-height: 110%;
+      padding: 20px 26px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}

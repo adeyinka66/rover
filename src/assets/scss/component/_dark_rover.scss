@@ -1,0 +1,55 @@
+$color_1: #e6e6e6;
+$background-color_1: rgba(0, 0, 0, 0.5);
+$background-color_2: ghostwhite;
+$background-color_3: #e6e6e6;
+$background-image_1: url("../../../assets/img/camaro.jpg");
+
+.circle_text_container_dark {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid $color_1;
+  transition: 1s;
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  position: absolute;
+  z-index: 5;
+  left: 42%;
+  background-color: #131c21;
+  filter: grayscale(50%);
+
+
+  path {
+    fill: transparent;
+  }
+
+  text {
+    fill: #fff;
+    transition: 1s;
+  }
+  .path_curve{
+    font-size: 72px;
+    letter-spacing: 3px;
+    cursor: pointer;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.circle_text_container_dark:hover {
+  background-color: $background-color_3;
+}
+.circle_text_container_dark:hover text{
+  fill: $background-color_1;
+  font-weight: 700;
+}

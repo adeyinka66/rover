@@ -1,0 +1,121 @@
+$color_1: #e6e6e6;
+$background-color_1: rgba(0, 0, 0, 0.5);
+$background-color_2: ghostwhite;
+$background-color_3: #e6e6e6;
+$background-image_1: url("../../../assets/img/camaro.jpg");
+
+@keyframes hero {
+  from {
+    filter: grayscale(50%);
+  }
+  to {
+    filter: grayscale(5%);
+  }
+}
+.rover_hero_container {
+  width: 100%;
+  height: 630px;
+  padding: 20px 0;
+  background-image: $background-image_1;
+  background-color: $background-color_1;
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: hero;
+  animation-duration: 3s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+  .rover_hero_text {
+    width: 85%;
+    margin: 0 auto;
+
+    div {
+      p {
+        letter-spacing: 2px;
+        color: $color_1;
+        font-size: 22px;
+      }
+    }
+    .drive_dont {
+      margin-bottom: 4%;
+    }
+    .drive_dont p {
+      line-height: 32px;
+      font-weight: 600;
+      color: $color_1;
+      letter-spacing: 4px;
+    }
+  }
+  .rover_hero_best_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .building_best {
+        width: 70%;
+        font-size: 2.4rem;
+      line-height: 5.3rem;
+        color: $color_1;
+    }
+    .circle_text_container {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 1px solid $color_1;
+      transition: 1s;
+      animation-name: rotate;
+      animation-duration: 20s;
+     animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+
+      path {
+        fill: transparent;
+      }
+
+      text {
+        fill: $color_1;
+        transition: 1s;
+      }
+      .path_curve{
+        font-size: 72px;
+        letter-spacing: 3px;
+        cursor: pointer;
+      }
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    .circle_text_container:hover {
+      background-color: $background-color_3;
+    }
+    .circle_text_container:hover text{
+      fill: $background-color_1;
+      font-weight: 700;
+    }
+
+
+  }
+
+}
+.one {
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.two {
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  background-color: $background-color_2;
+  margin: 0 auto;
+}
